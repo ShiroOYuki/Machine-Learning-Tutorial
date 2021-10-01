@@ -20,7 +20,7 @@
 
 * pandas >= 0.25.3
 
-# [Ch0. 資料分析](.\Ch0\README.md)
+# [Ch0. 資料分析](./Ch0/README.md)
 
 ## 獲取資料集
 ### 資料集來源
@@ -32,9 +32,9 @@
 
 ### 範例
 
-* [Get_Iris.py](.\Ch0\Get_Data\Get_Iris.py)
+* [Get_Iris.py](./Ch0/Get_Data/Get_Iris.py)
 
-* [Get_Iris.ipynb](.\Ch0\Get_Data\Get_Iris.ipynb)
+* [Get_Iris.ipynb](./Ch0/Get_Data/Get_Iris.ipynb)
 
 ## 資料預處理 ( Data Preprocessing )
 
@@ -65,15 +65,15 @@
 
 ## README
 
-* [感知器](.\Ch1\Perceptron\README.md)
+* [感知器](./Ch1/Perceptron/README.md)
 
-* [適應線性神經元](.\Ch1\Adaptive_linear_neurons\README.md)
+* [適應線性神經元](./Ch1/Adaptive_linear_neurons/README.md)
 
 ## 範例
 
-* 感知器：[Perceptron.py](.\Ch1\Perceptron\Perceptron.py)
+* 感知器：[Perceptron.py](./Ch1/Perceptron/Perceptron.py)
 
-* 適應線性神經元：[Adaptive_linear_neurons.py](.\Ch1\Adaptive_linear_neurons\Adaptive_linear_neurons.py)
+* 適應線性神經元：[Adaptive_linear_neurons.py](./Ch1/Adaptive_linear_neurons/Adaptive_linear_neurons.py)
 
 # 參考資料 
 

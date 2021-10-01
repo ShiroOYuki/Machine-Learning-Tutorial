@@ -10,9 +10,9 @@
 
 ### 檔案
 
-* [Get_Iris.py](.\Get_Data\Get_Iris.py)
+* [Get_Iris.py](./Get_Data/Get_Iris.py)
 
-* [Get_Iris.ipynb](.\Get_Data\Get_Iris.ipynb)
+* [Get_Iris.ipynb](./Get_Data/Get_Iris.ipynb)
 
 ## 資料預處理 ( Data Preprocessing )
 

@@ -6,7 +6,7 @@
 
 2. 對每個訓練樣本 ( $ x^{(i)} $ ) 進行：
     
-    1. 計算輸出值 ( $ \hat y $ )
+    1. 計算輸出值 ( $ /hat y $ )
     
     2. 更新加權 ( $ w $ )
         
@@ -14,18 +14,18 @@
         
         * 更新後的 **"加權重量 ( $ w_j $ )"** 定義 ( $ := $ ) 為：  
         $$ 
-        w_j:=w_j+\Delta w_j
+        w_j:=w_j+/Delta w_j
         $$
         
-        * 其中的 $ \Delta w_j $ 代表 $ w_j $ 的變化量：
+        * 其中的 $ /Delta w_j $ 代表 $ w_j $ 的變化量：
         $$
-        \Delta w_j = \eta(y^{(i)} - \hat y^{(i)})x^{(i)}_j
+        /Delta w_j = /eta(y^{(i)} - /hat y^{(i)})x^{(i)}_j
         $$
         
-        * $ \eta $ ：**"學習速率"**： $ 0 < \eta \le1 $  
+        * $ /eta $ ：**"學習速率"**： $ 0 < /eta /le1 $  
          
         * $ y^{(i)} $ ： 第 $ i $ 個訓練樣本的 **"真實類別標籤 ( True class label ) "**
         
-        * $ \hat y^{(i)} $ ： 第 $ i $ 個訓練樣本的 **"預測類別標籤 ( Predicted class label ) "**
+        * $ /hat y^{(i)} $ ： 第 $ i $ 個訓練樣本的 **"預測類別標籤 ( Predicted class label ) "**
 
         * $ x^{(i)}_j $ ： 第 $ i $ 個訓練樣本的第 $ j $ 個 **"特徵 ( Feature )"**  
