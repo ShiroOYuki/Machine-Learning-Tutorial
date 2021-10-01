@@ -8,13 +8,16 @@
     
     * $ y $ 代表：目標 ( target )、結果
 
-## 套件
+---
+
+## 函式庫
 
 * Numpy >= 1.17.4
 
 * Scipy >= 1.3.1
 
 * scikit-learn >= 0.22.0
+    > import 時的名稱為 sklearn
 
 * Matplotlib >=3.1.0
 
@@ -36,6 +39,29 @@
 
 * [Get_Iris.ipynb](./Ch0/Get_Data/Get_Iris.ipynb)
 
+---
+
+## Pandas 基礎
+### Function
+
+* 欄位 ( Series )
+
+* 表格 ( DataFrame )
+
+* 資料選取 ( Selection )
+
+* 資料分群 ( Grouping )
+
+### README
+
+* [Pandas](./Ch0/Pandas_Example/README.md)
+
+### 範例
+
+* [Example.py](./Ch0/Pandas_Example/Example.py)
+
+---
+
 ## 資料預處理 ( Data Preprocessing )
 
 * Missing data
@@ -51,9 +77,13 @@
 
 * 適應線性神經元 ( Adaptive linear neurons )
 
+---
+
 ## 數據集
 
 * 鳶尾花數據集 ( Iris Dataset )
+
+---
 
 ## 套件
 
@@ -63,11 +93,15 @@
 
 * matplotlib
 
+---
+
 ## README
 
 * [感知器](./Ch1/Perceptron/README.md)
 
 * [適應線性神經元](./Ch1/Adaptive_linear_neurons/README.md)
+
+---
 
 ## 範例
 
