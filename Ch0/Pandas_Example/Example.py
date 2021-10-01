@@ -108,6 +108,8 @@ print("\n\n" + '-'*20 + "[df3['i'] > 0]" + '-'*20 + "\n\n")
 
 print(df3[df3["i"] > 0])
 
+print("\n\n" + '=-'*20 + "Grouping" + '-='*20 + "\n\n")
+
 l = [[1, 2, 3], [1, None, 4], [2, 1, 3], [1, 2, 2]]
 df4 = pd.DataFrame(l, columns=["a", "b", "c"])
 
