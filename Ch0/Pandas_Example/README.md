@@ -53,6 +53,7 @@
 * 常用函式：
 
     * .columns：顯示所有欄位名稱
+        > 後面可以接 =[name1, name2...] 來改 column name
 
     * .info()：
         
@@ -77,6 +78,14 @@
     * .tail( \<num>:int )：顯示後 num 筆資料
 
     * .sort_values( by=\<column name>:str )：依照指定欄位內的資料來做排序
+
+    * .drop(\<name>,axis:int)：刪除名稱為 name 的欄或列
+        > axis = 0：刪除欄  
+        > axis = 1：刪除列
+
+    * pandas.concat([DataFrame1,DataFrame2],axis:int)：合併 ( 接上? ) 兩個 DataFrame
+        > axis = 0：垂直合併  
+        > axis = 1：平行合併
 
 ---
 

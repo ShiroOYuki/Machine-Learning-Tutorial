@@ -28,7 +28,9 @@ print("\n\n" + '=-'*20 + "DataFrame" + '-='*20 + "\n\n")
 # (6,4) : 生成高為 6，寬為 4 共 24 個數值
 df = pd.DataFrame(np.random.randn(6,4))
 df2 = pd.DataFrame(np.random.randn(6,4),index=["a","b","c","d","e","f"])
+#df2.index = ["a","b","c","d","e","f"]
 df3 = pd.DataFrame(np.random.randn(6,4),index=["a","b","c","d","e","f"],columns=["i","ii","iii","iv"])
+#df3.columns = ["a","b","c","d","e","f"]
 
 print("\n\n" + '-'*20 + "Original" + '-'*20 + "\n\n")
 
@@ -108,6 +110,18 @@ print("\n\n" + '-'*20 + "[df3['i'] > 0]" + '-'*20 + "\n\n")
 
 print(df3[df3["i"] > 0])
 
+print("\n\n" + '-'*20 + "pd.concat([dfConcat,df],1)" + '-'*20 + "\n\n")
+
+dfConcat = pd.DataFrame(np.random.randn(6,2))
+dfConcat = pd.concat([dfConcat,df],1)
+print(dfConcat)
+
+print("\n\n" + '-'*20 + "df3.drop('ii',1)" + '-'*20 + "\n\n")
+
+dfDrop = df3.drop("ii",1)
+print(dfDrop)
+
+# Grouping
 print("\n\n" + '=-'*20 + "Grouping" + '-='*20 + "\n\n")
 
 l = [[1, 2, 3], [1, None, 4], [2, 1, 3], [1, 2, 2]]
