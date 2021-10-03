@@ -54,7 +54,29 @@
 
 * [Feature_Scaling.py](./Data_Preprocessing/Feature_Scaling.py)
 
-## 資料圖表
+## [資料視覺化 ( Data Visualization )](./Data_Visualization/README.md)
+
+* 這裡主要介紹以下三種：
+    
+    1. Matplotlib ( 簡稱 plt )
+    
+    2. Seaborn
+    
+    3. Plotly
+
+### Matplotlib
+
+* 優點
+    
+    * 這個庫發展了很久，基本上沒有他畫不出來的圖表 ( 只有你寫不出來 \_(┐「ε:)\_ )
+    
+    * 有很多的教學文章或是範例可參考
+
+* 缺點
+    
+    * 畫出來的圖不是說到太好看
+    
+    * 指令有夠複雜 ( ´•ω•` )
 
 # 參考資料
 
@@ -63,3 +85,5 @@
 * [資料分析-機器學習 2-3 -- Yeh James](https://medium.com/jameslearningnote/%E8%B3%87%E6%96%99%E5%88%86%E6%9E%90-%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92-%E7%AC%AC2-3%E8%AC%9B-pandas-%E5%9F%BA%E6%9C%ACfunction%E4%BB%8B%E7%B4%B9-series-dataframe-selection-grouping-447a3fa90b60)
 
 * [資料分析-機器學習 2-4 -- Yeh James](https://medium.com/jameslearningnote/%E8%B3%87%E6%96%99%E5%88%86%E6%9E%90-%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92-%E7%AC%AC2-4%E8%AC%9B-%E8%B3%87%E6%96%99%E5%89%8D%E8%99%95%E7%90%86-missing-data-one-hot-encoding-feature-scaling-3b70a7839b4a)
+
+* [資料分析-機器學習 2-5 -- Yeh James](https://medium.com/jameslearningnote/%E8%B3%87%E6%96%99%E5%88%86%E6%9E%90-%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92-%E7%AC%AC2-5%E8%AC%9B-%E8%B3%87%E6%96%99%E8%A6%96%E8%A6%BA%E5%8C%96-matplotlib-seaborn-plotly-75cd353d6d3f)
