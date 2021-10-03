@@ -35,6 +35,8 @@
 
 * [Missing_Data.py](./Missing_Data.py)
 
+---
+
 ## One-hot encoding
 > 只適合用在資料特徵少的時候，否則會造成維數災難
 
@@ -67,7 +69,39 @@
 
 * [One-hot-encoding.py](./One-hot-encoding.py)
 
+---
+
 ## Feature Scaling
+
+> 假設特徵 1 ( $\theta_1$ ) 範圍為 1~5，特徵 2 ( $\theta_2$ ) 範圍為 0~2000 時 ( 範圍相差太大時 )，則呈現出來的特徵會是像橢圓形，比較難利用梯度下降來找到圓心，因此需要做 Feature Scaling 來讓他接近一個圓  
+> ![](../../Static/Image/Ch0/Feature-scaling.png)
+
+* 常見的 Feature Scaling 演算法有兩種：
+    
+    1. 歸一化 ( Normalization )
+    
+    2. 標準化 ( Standardization )
+
+### 歸一化 ( Normalization )
+
+* 最常見的 Normalization 為 0~1 區間縮放，最大值變為 1，最小值變為 0，中間值做等比例縮放：
+$$
+x_{norm} = \frac{x^{(i)}-x_{min}}{x_{max}-x_{min}}
+$$
+> $x_{norm}$：$x$ ( Normal )，代表經過 Normalization 後計算出來的值
+
+### 標準化 ( Standardization )
+$$
+x^{(i)}_{std} = \frac{x^{(i)}-\mu_x}{\sigma_x}
+$$
+> $\sigma$ ( 讀作 sigma )：標準差，定義為 **"與平均數的平均距離( 平均誤差 )"**，可以用 DataFrame.std() 來取得  
+> $\mu$：平均數  
+* 經過 Standardization 後的資料平均值會為 0，標準差為 1，且符合常態分布
+* 可使離群值 ( Outlier ) 的影響程度大大降低
+
+### 範例
+
+* [Feature_Scaling.py](./Feature_Scaling.py)
 
 ## 其他
 

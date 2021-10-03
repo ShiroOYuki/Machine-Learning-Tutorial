@@ -41,7 +41,7 @@
 
 ---
 
-## Pandas 基礎
+## [Pandas 基礎](./Ch0/Pandas_Example/README.md)
 ### Function
 
 * 欄位 ( Series )
@@ -52,23 +52,27 @@
 
 * 資料分群 ( Grouping )
 
-### README
-
-* [Pandas](./Ch0/Pandas_Example/README.md)
-
 ### 範例
 
 * [Example.py](./Ch0/Pandas_Example/Example.py)
 
 ---
 
-## 資料預處理 ( Data Preprocessing )
+##  [資料預處理 ( Data Preprocessing )](./Ch0/Data_Preprocessing/README.md)
 
 * Missing data
 
 * One-hot encoding
 
 * Feature Scaling
+
+### 範例
+
+* [Missing_Data.py](./Ch0/Data_Preprocessing/Missing_Data.py)
+
+* [One-hot-encoding.py](./Ch0/Data_Preprocessing/One-hot-encoding.py)
+
+* [Feature_Scaling.py](./Ch0/Data_Preprocessing/Feature_Scaling.py)
 
 # [Ch1. 感知器 與 適應線性神經元](./Ch1/README.md)
 ## 演算法
@@ -116,3 +120,5 @@
 * [資料分析-機器學習 2-1 -- Yeh James](https://medium.com/jameslearningnote/%E8%B3%87%E6%96%99%E5%88%86%E6%9E%90-%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92-%E7%AC%AC2-1%E8%AC%9B-%E5%A6%82%E4%BD%95%E7%8D%B2%E5%8F%96%E8%B3%87%E6%96%99-sklearn%E5%85%A7%E5%BB%BA%E8%B3%87%E6%96%99%E9%9B%86-baa8f027ed7b)
 
 * [資料分析-機器學習 2-3 -- Yeh James](https://medium.com/jameslearningnote/%E8%B3%87%E6%96%99%E5%88%86%E6%9E%90-%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92-%E7%AC%AC2-3%E8%AC%9B-pandas-%E5%9F%BA%E6%9C%ACfunction%E4%BB%8B%E7%B4%B9-series-dataframe-selection-grouping-447a3fa90b60)
+
+* [資料分析-機器學習 2-4 -- Yeh James](https://medium.com/jameslearningnote/%E8%B3%87%E6%96%99%E5%88%86%E6%9E%90-%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92-%E7%AC%AC2-4%E8%AC%9B-%E8%B3%87%E6%96%99%E5%89%8D%E8%99%95%E7%90%86-missing-data-one-hot-encoding-feature-scaling-3b70a7839b4a)
