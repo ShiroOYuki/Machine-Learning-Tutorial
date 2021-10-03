@@ -103,7 +103,7 @@ $$
 
 * [Feature_Scaling.py](./Feature_Scaling.py)
 
-## 其他
+---
 
 ## 參考資料
 
