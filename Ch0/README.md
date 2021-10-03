@@ -54,15 +54,15 @@
 
 * [Feature_Scaling.py](./Data_Preprocessing/Feature_Scaling.py)
 
+---
+
 ## [資料視覺化 ( Data Visualization )](./Data_Visualization/README.md)
 
-* 這裡主要介紹以下三種：
+* 這裡主要介紹以下兩種：
     
     1. Matplotlib ( 簡稱 plt )
     
-    2. Seaborn
-    
-    3. Plotly
+    2. Seaborn ( 簡稱 sns )
 
 ### Matplotlib
 
@@ -74,9 +74,25 @@
 
 * 缺點
     
-    * 畫出來的圖不是說到太好看
-    
     * 指令有夠複雜 ( ´•ω•` )
+
+### Seaborn
+
+* 優點
+
+    * 指令簡單 (｡･∀･)ﾉﾞ
+    
+    * 圖表還蠻漂亮的 (✿゜▽゜)♪
+
+* 缺點
+
+    * 比起 Matplotlib 來說，能畫的圖比較少，但可以跟 Matplotlib 交互使用
+
+### 範例
+
+* [Matplotlib.ipynb](./Data_Visualization/Matplotlib.ipynb)
+
+* [Seaborn.ipynb](./Data_Visualization/Seaborn.ipynb)
 
 # 參考資料
 

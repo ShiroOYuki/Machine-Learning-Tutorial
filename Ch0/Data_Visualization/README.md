@@ -69,7 +69,7 @@
 
 ### 範例
 
-* [Matplotmat.ipynb](./Matplotmat.ipynb)
+* [Matplotlib.ipynb](./Matplotlib.ipynb)
 
 ---
 
@@ -124,3 +124,11 @@
     > data：資料內容 ( 必須是 DataFrame )  
     > hue：顏色 ( 根據填入的欄位分類 )  
     > fit_reg：是否畫出直線  
+
+### 範例
+
+* [Seaborn.ipynb](./Seaborn.ipynb)
+
+## 參考資料
+
+* [資料分析-機器學習 2-5 -- Yeh James](https://medium.com/jameslearningnote/%E8%B3%87%E6%96%99%E5%88%86%E6%9E%90-%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92-%E7%AC%AC2-5%E8%AC%9B-%E8%B3%87%E6%96%99%E8%A6%96%E8%A6%BA%E5%8C%96-matplotlib-seaborn-plotly-75cd353d6d3f)
