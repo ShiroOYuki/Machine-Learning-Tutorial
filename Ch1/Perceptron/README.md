@@ -1,5 +1,30 @@
 # 感知器 Perceptron, PLA
 
+## 前置條件
+
+* PLA 用於線性分類
+
+* 資料需要可線性分離：
+
+    * 2D：可以用一條線切出兩群
+    
+    * 3D：可以用一個平面切出兩群
+
+    ![](../../Static/Image/Ch1/Linearly_separable.png)
+
+* PLA 數學模型
+
+    ![](../../Static/Image/Ch1/PLA_math_modulE.png)
+
+    * Inputs ( 輸入資料 )：$x_0$ ~ $x_n$ , $x_0$ 永遠 = 1
+
+    * weights ( 權重 )：$w_0$ ~ $w_n$
+
+    * $\Sigma$：把左邊的部分加起來後丟給右邊
+
+    * Activation function ( 激勵函數 )：輸入 >0 就判斷 1、$\le$ 0 就判斷成是 -1
+        > 也可以是其他判斷方法
+
 ## 學習規則
  
 1. 初始化一個 **"加權為 0"** 或 **"很小"** 的亂數
@@ -22,10 +47,20 @@
         \Delta w_j = \eta(y^{(i)} - \hat y^{(i)})x^{(i)}_j
         $$
         
-        * $\eta$ ：**"學習速率"**： $0 < \eta \le 1$  
-         
-        * $y^{(i)}$ ： 第 $i$ 個訓練樣本的 **"真實類別標籤 ( True class label ) "**
-        
-        * $\hat y^{(i)}$ ： 第 $i$ 個訓練樣本的 **"預測類別標籤 ( Predicted class label ) "**
+        > $\eta$ ：**"學習速率"**： $0 < \eta \le 1$  
+        >
+        > $y^{(i)}$ ： 第 $i$ 個訓練樣本的 **"真實類別標籤 ( True class label ) "，代表應輸出的結果**
+        >
+        > $\hat y^{(i)}$ ： 第 $i$ 個訓練樣本的 **"預測類別標籤 ( Predicted class label ) "，代表實際輸出的結果**
+        >
+        > $x^{(i)}_j$ ： 第 $i$ 個訓練樣本的第 $j$ 個 **"特徵 ( Feature )"**  
+        >
+        > $y^{(i)} - \hat y^{(i)}$：如果預測正確就會為 0 ( 應輸出的結果與實際輸出的結果相同，$y^{(i)} = \hat y^{(i)}$ )
 
-        * $x^{(i)}_j$ ： 第 $i$ 個訓練樣本的第 $j$ 個 **"特徵 ( Feature )"**  
+        * 或寫得簡單一點：
+        $$
+        w = w +\Delta w\\
+        \Delta w = y\cdot x\\
+        $$
+    
+    3. 如果完全預測正確就退出程式

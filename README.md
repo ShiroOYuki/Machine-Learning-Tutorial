@@ -2,6 +2,30 @@
 
 ## 基礎觀念
 
+* 神經網路模型 ( Neural Network, NN ) 
+
+    ![](./Static/Image/Ch1/NN.png)
+
+* 演算法地圖
+
+    ![](Static/Image/Ch1/Algorithm_cheat_sheet.png)
+
+* 機器學習分為：
+    
+    * 監督式學習(supervised learning)
+    
+    * 非監督式學習(unsupervised learning)
+    
+    * 半監督式學習(semi-supervised learning)
+    
+    * 增強式學習(reinforcement learning)
+
+* 深度學習 ?：
+
+    * 深度學習原本是機器學習的一部分，但後來被另外獨立出來
+
+    * 由於在類神經網絡隱藏層的地方有非常多層，因此得名"深度"學習
+
 * 通常在機器學習領域內：
    
     * $x$ 代表：特徵 ( feature )、資料
@@ -21,6 +45,8 @@
 
 * Matplotlib >=3.1.0
 
+* Seaborn
+
 * pandas >= 0.25.3
 
 # [Ch0. 資料分析](./Ch0/README.md)
@@ -30,8 +56,6 @@
 * [Sklearn 內建 Dataset](https://scikit-learn.org/stable/datasets/toy_dataset.html)
 
 * [Kaggle Dataset](https://www.kaggle.com/datasets)
-
-* Google map API
 
 ### 範例
 
