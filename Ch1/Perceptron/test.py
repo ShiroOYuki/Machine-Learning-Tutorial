@@ -1,7 +1,8 @@
-from sklearn import datasets
+import numpy as np
+a = np.array([1,2,3])
+b = np.array([4,5,6])
 
-iris = datasets.load_iris()
+print(a*b)
+print(np.dot(a, b))
 
-it = iris["target"][(iris["target"] == 0)|(iris["target"] == 1)]
-
-print(it)
+print(np.linspace(-0.5,7))
