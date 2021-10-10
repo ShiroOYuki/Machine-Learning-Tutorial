@@ -21,6 +21,7 @@ iris = datasets.load_iris()
 iris_target = iris["target"][(iris["target"] == 0)|(iris["target"] == 1)]
 iris_target = pd.DataFrame(iris_target,columns=["target"])
 print(iris_target)
+
 mapping = {
     0:'setosa',
     1:'versicolor',
@@ -28,33 +29,30 @@ mapping = {
 }
 iris_target["target"] = iris_target["target"].map(mapping)
 print(iris_target)
+
 # 抓 sepal length (cm)、petal length (cm) 
 iris_data = iris["data"]
 iris_data = pd.DataFrame(iris_data,columns=iris["feature_names"])
 print(iris_data)
+
 iris_data = iris_data[["sepal length (cm)","petal length (cm)"]]
 print(iris_data)
+
 iris_data = pd.concat([iris_data,iris_target],axis=1)
 iris_data = iris_data.dropna()
 print(iris_data)
+
 mapping = {
     'setosa':1,
     'versicolor':-1
 }
-
 # 不符合條件的會直接被 drop 掉
 iris_data["target"] = iris_data["target"].map(mapping)
-
 print(iris_data)
-
-#os.system("pause")
 
 # Activation function ( 激勵函數 )
 def activation(z):
     return 1 if z>0 else -1
-
-def visualization():
-    pass
 
 # w ( 權重 ) 長度需與特徵數一樣
 # 在這裡特徵為 [x0,sepal_length,petal length (cm)]
@@ -84,12 +82,26 @@ while error != 0:
             w += y*x
     print(error,w,y,result,np.dot(w,x))
 
-# ax+by=c
-# (a,b)是垂直於這個平面的法向量，(b,-a)是方向向量
-x_decision_boundary = np.linspace(-0.5,7)
+# 以下為視覺化
+
+x_decision_boundary = np.linspace(0,7,2) # 在 0 ~ 7 之間取兩個點
+
+# ax+by+c=0 為一直線 ( 決策邊界, 分割線 )
+# by = -ax-c
+# y = (-ax-c)/b
+# y = -ax/b - c/b
+# c = x0*w0, x0 = 1, c = w0
+# a -> w1
+# b -> w2
+# y = -w1*x/w2-w0/w2
+# y = (-w1/w2)*x - (w0/w2)
 y_decision_boundary = (-w[1]/w[2])*x_decision_boundary-(w[0]/w[2])
-print(iris_data)
-sns.lmplot('sepal length (cm)','petal length (cm)',iris_data,hue='target')
+
+print(w)
+print(x_decision_boundary)
+print(y_decision_boundary)
+
+sns.lmplot('sepal length (cm)','petal length (cm)',iris_data,hue='target',fit_reg=False,)
 plt.plot(x_decision_boundary,y_decision_boundary,'r')
 
 plt.show()
