@@ -93,6 +93,7 @@ w = np.concatenate((w0,lr.coef_[0]))
 print(w)
 
 # visualization
+# 這次的視覺化是畫出區塊，間接顯示出決策邊界，而不是直接畫決策邊界
 
 def plot_decision_regions(X, y, classifier, test_idx=None, resolution=0.02):
 
@@ -104,6 +105,8 @@ def plot_decision_regions(X, y, classifier, test_idx=None, resolution=0.02):
     # plot the decision surface
     # X[:, 0] : sepal length (cm) (Std)
     # X[:, 1] : petal width (cm) (Std)
+    # -1、+1 是為了留空 ( 不然最小和最大的兩點會直接貼著圖片的框框，很難看 )
+    print(X[:, 0].min() - 1, X[:, 0].max() + 1)
     x1_min, x1_max = X[:, 0].min() - 1, X[:, 0].max() + 1
     x2_min, x2_max = X[:, 1].min() - 1, X[:, 1].max() + 1
 
@@ -118,8 +121,11 @@ def plot_decision_regions(X, y, classifier, test_idx=None, resolution=0.02):
     # np.ravel() : 把多維陣列拉直成一維陣列
     xx = np.array([xx1.ravel(), xx2.ravel()])
     print(xx)
+
+    # 把範圍內的所有點 ( 每0.02取一個點 )全部重新預測，並依照預測結果上色
     Z = classifier.predict(xx.T)
     Z = Z.reshape(xx1.shape)
+    print(Z)
     
     plt.contourf(xx1, xx2, Z, alpha=0.4, cmap=cmap)
 
@@ -143,7 +149,7 @@ def plot_decision_regions(X, y, classifier, test_idx=None, resolution=0.02):
 
         plt.scatter(X_test[:, 0],
                     X_test[:, 1],
-                    c='',
+                    c='yellow',
                     alpha=1.0,
                     edgecolor='black',
                     linewidths=1,
